@@ -71,10 +71,10 @@
 <div class="flex flex-col border border-black mb-2" class:hidden={hidden} on:click={handleClick}>
   <img class="flex-grow-1 w-full h-auto border border-black" src={src} alt="Uploaded image {name}"/>
   <div class="flex-grow-0 flex flex-row flex-wrap w-full">
-    <img class="p-2 w-12" class:invisible={!showFaceIcon} src=images/face.svg alt="Image has faces"/>
-    <img class="p-2 w-12" class:invisible={!showTextIcon} src=images/text.svg alt="Image has text"/>
-    <img class="p-2 w-12" class:invisible={!showAdultIcon} src=images/adult.svg alt="Image has adult content"/>
-    <img class="p-2 w-12" class:invisible={!showRacyIcon} src=images/racy.svg alt="Image has racy content"/>
-    <img class="p-2 w-12" class:invisible={!showViolenceIcon} src=images/violence.svg alt="Image has violent content"/>
+    <img class="p-2 w-12 h-12" class:invisible={!showFaceIcon} src=images/face.svg alt="Image has faces"/>
+    <img class="p-2 w-12 h-12" class:invisible={!showTextIcon} src=images/text.svg alt="Image has text"/>
+    <img class="p-2 w-12 h-12" class:invisible={!showAdultIcon} src=images/adult.svg alt="Image has adult content"/>
+    <img class="p-2 w-12 h-12" class:invisible={!showRacyIcon} src=images/racy.svg alt="Image has racy content"/>
+    <img class="p-2 w-12 h-12" class:invisible={!showViolenceIcon} src=images/violence.svg alt="Image has violent content"/>
   </div>
 </div>

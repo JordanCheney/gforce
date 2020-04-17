@@ -20,14 +20,12 @@
   }
 
   function handleAddedFile(e) {
-    console.log("Header api key: ", header.getApiKey());
     if (header.getApiKey().length == 0) {
-      console.log("Calling change border red");
       header.triggerApiKeyInputAttention()
       return;
     }
 
-    //launchApiRequest(e.detail.id, e.detail.file, apiKey, ["Recognize"], handleApiResponseReady);
+    launchApiRequest(e.detail.id, e.detail.file, apiKey, ["Recognize"], handleApiResponseReady);
     
     if (gallery) {
       gallery.handleAddImage(e);
