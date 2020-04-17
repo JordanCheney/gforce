@@ -47,8 +47,7 @@ config :logger, level: :info
 #
 config :gforce, GforceWeb.Endpoint,
   url: [host: System.get_env("RENDER_EXTERNAL_HOSTNAME") || "localhost", port: 80],
-  cache_static_manifest: "priv/static/cache_manifest.json",
-  force_ssl: [hsts: true]
+  cache_static_manifest: "priv/static/cache_manifest.json"
 #
 # Check `Plug.SSL` for all available options in `force_ssl`.
 
