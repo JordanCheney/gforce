@@ -119,14 +119,14 @@
   };
 </script>
 
-<div class="flex flex-row flex-wrap">
+<div class="flex flex-row flex-wrap h-12">
   <label class="flex-none py-2 pr-4">
     <p class="self-center font-bold">Filters:</p>
   </label>
   {#each Object.values(filters) as filter}
     <label class="flex flex-row flex-none pr-4 py-2">
       <input type=checkbox class="flex-none self-center" value={filter.name} on:input={handleFilter}>
-      <p class="px-2">{filter.label}</p>
+      <p class="px-2 self-center">{filter.label}</p>
       <img class="flex-none" src={filter.image} alt="{filter.name} indicator" height="24" width="24"/>
     </label>
   {/each}

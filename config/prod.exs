@@ -45,11 +45,12 @@ config :logger, level: :info
 # We also recommend setting `force_ssl` in your endpoint, ensuring
 # no data is ever sent via http, always redirecting to https:
 #
-#     config :gforce, GforceWeb.Endpoint,
-#       force_ssl: [hsts: true]
+config :gforce, GforceWeb.Endpoint,
+  url: [host: System.get_env("RENDER_EXTERNAL_HOSTNAME") || "localhost", port: 80],
+  cache_static_manifest: "priv/static/cache_manifest.json",
+  force_ssl: [hsts: true]
 #
 # Check `Plug.SSL` for all available options in `force_ssl`.
 
 # Finally import the config/prod.secret.exs which loads secrets
 # and configuration from environment variables.
-import_config "prod.secret.exs"
