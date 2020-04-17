@@ -8,8 +8,6 @@
   import ImageModal from "./ImageModal.svelte";
   import Footer from "./Footer.svelte";
 
-  //const apiKey = "AIzaSyCw6AoaxT6HTiwZshIozySRnU2zq6tWLXY";
-
   let header;
   let gallery;
   let modal;
