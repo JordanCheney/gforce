@@ -58,10 +58,12 @@
 </script>
 
 <TailwindCSS/>
-<Modal class="font-sans" on:modalClosed={handleModalClosed} bind:this={modal}>
-  <div class="px-20 py-4">
-    <Header bind:this={header} on:helpClicked={handleHelpButtonClicked}/>
-    <Gallery bind:this={gallery} on:addedFile={handleAddedFile} on:thumbnailClicked={handleThumbnailClicked}/>
-    <Footer/>
-  </div>
-</Modal>
+<div class="font-sans">
+  <Modal class="font-sans" on:modalClosed={handleModalClosed} bind:this={modal}>
+    <div class="px-20 py-4">
+      <Header bind:this={header} on:helpClicked={handleHelpButtonClicked}/>
+      <Gallery bind:this={gallery} on:addedFile={handleAddedFile} on:thumbnailClicked={handleThumbnailClicked}/>
+      <Footer/>
+    </div>
+  </Modal>
+</div>
