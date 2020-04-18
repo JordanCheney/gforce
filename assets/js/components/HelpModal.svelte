@@ -8,9 +8,9 @@
   }
 </script>
 
-<div class="flex flex-col justify-center">
+<div class="flex flex-col justify-center eading-relaxed text-lg">
   <div class="flex-grow-0 justify-center p-2">
-    <p class="float-left font-bold text-lg">GForCE Help</p>
+    <p class="float-left font-bold text-xl">GForCE Help</p>
     <div class="float-right cursor-pointer items-center h-8 w-8 p-2" on:click={handleCloseButtonClick}>
       <img class="w-full h-auto" src="images/close.svg" alt="Close modal"/>
     </div>
@@ -23,14 +23,14 @@
       <a class="text-blue-400" href="#Pricing">Pricing</a>
       <a class="text-blue-400" href="#SelfHosting">Self Hosting</a>
     </div>
-    <div class="flex-grow pl-2 overflow-y-scroll">
-      <p id="Overview" class="font-bold text-lg">Overview</p>
+    <div class="flex-grow pl-2 px-2 overflow-y-scroll">
+      <p id="Overview" class="font-bold text-xl">Overview</p>
 
       GForCE is a web-based tool that exposes Google Cloud's media APIs in a user friendly UI. 
       It was built based on my experience with the Interpol DevOps Working Groups and was 
       designed with law enforcement users in the VictimID field in mind.
 
-      <p id="DataUsage" class="font-bold text-lg pt-6">Data Usage</p>
+      <p id="DataUsage" class="font-bold text-xl pt-6">Data Usage</p>
 
       <h3 class="border-l-4 border-black ml-2 pl-2 py-2 italic">
         GForCE is a web-based service that sends your data to a remote server. If that is not acceptable do not use GForCE
@@ -45,13 +45,13 @@
       <a class="text-blue-400" target="_blank" href="https://cloud.google.com/vision/docs/data-usage">here</a>.</p>
 
       <p class="pt-2">All communication made between the client and the GForCE server are sent encrypted over HTTPS. All communication 
-      between the GForCE server and the Google Cloud server are set encrypted over HTTPS</p>
+      between the GForCE server and the Google Cloud server are sent encrypted over HTTPS</p>
 
       <p class="pt-2">All requests are made using the user's Google API key, see 
       <a class="text-blue-400" href="#GeneratingApiKey">the next section</a> for information on how to create an API key. This means 
       that all the user has full control over requests, logging, Google Cloud management and permissions.</p>
       
-      <p id="GeneratingApiKey" class="font-bold text-lg pt-6">Generating An API Key</p>
+      <p id="GeneratingApiKey" class="font-bold text-xl pt-6">Generating An API Key</p>
 
       GForCE requires you to provide a Google Cloud API key so that you control you data in Google and so that you pay for your requests.
       To create a Google Cloud API key, first vist <a class="text-blue-400" target="_blank" href="https://cloud.google.com">cloud.google.com</a>
@@ -59,7 +59,7 @@
       <a class="text-blue-400" target="_blank" href="https://cloud.google.com/docs/authentication/api-keys">these instructions</a> to create an
       API key. Once you have a key, copy and paste it into the field at the top of GForCE.
 
-      <p id="Pricing" class="font-bold text-lg pt-6">Pricing</p>
+      <p id="Pricing" class="font-bold text-xl pt-6">Pricing</p>
 
       GForCE is a free and open source tool, but the Google Cloud APIs cost money. To use GForCE, you have to have an existing Google Cloud account
       with a valid credit card attached to it. Any request you make through GForCE, will issue a corresponding request to Google Cloud, which you
@@ -68,7 +68,7 @@
       "Face Detection", "Logo Detection", and "Object Localization". As of March 30th, 2020, those features will cost $8.25 (US) per thousand images and 
       the first thousand images are free. Please check current pricing before using GForCE to avoid surprise billing.
 
-      <p id="SelfHosting" class="font-bold text-lg pt-6">Self Hosting</p>
+      <p id="SelfHosting" class="font-bold text-xl pt-6">Self Hosting</p>
 
       GForCE is open source, and instructions for running it yourself are included in the 
       <a class="text-blue-400" target="_blank" href="https://github.com/JordanCheney/gforce">Github repository</a>

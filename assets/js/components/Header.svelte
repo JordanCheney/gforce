@@ -60,13 +60,10 @@
   <img class="flex-none pr-4" src="images/logo.png" alt="Project logo" height=80/>
   <div class="flex-none hidden xl:block self-center text-xl">GForCE: <u>G</u>oogle <u>For</u> combatting <u>C</u>hild <u>E</u>xploitation</div>
   <div class="flex-grow"></div>
-  <div class="flex flex-row my-6 w-56">
-    <input class="{apiKeyInputBorderWidth} {apiKeyInputBorderColor} h-8 rounded w-56 mr-1 p-2" class:attention={drawAttention} placeholder="Google API Key" bind:value={apiKey} on:input={resetApiKeyInput}/>
-    <div class="cursor-pointer h-8 w-8" on:click={handleApiKeyHelpClick}>
-      <img class="w-4 h-4 object-left-top" src="images/question.svg" alt="API Key help button"/>
-    </div>
+  <div class="flex flex-row py-2 mr-4 w-56 self-center">
+    <input class="{apiKeyInputBorderWidth} {apiKeyInputBorderColor} w-full h-10 rounded p-2" class:attention={drawAttention} placeholder="Google API Key" bind:value={apiKey} on:input={resetApiKeyInput}/>
   </div>
-  <div class="bg-transparent hover:bg-black text-black font-semibold hover:text-white py-2 px-4 border border-black hover:border-transparent rounded shadow self-center" on:click={handleHelpClick}>
+  <div class="bg-transparent hover:bg-black text-black font-semibold hover:text-white h-10 p-2 border border-black hover:border-transparent rounded shadow self-center" on:click={handleHelpClick}>
     How GForCE Works
   </div>
 </div>
