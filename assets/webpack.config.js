@@ -36,7 +36,8 @@ module.exports = (env, options) => ({
         use: {
           loader: "babel-loader"
         }
-      }
+      },
+      { test: /\.css$/, use: 'css-loader' },
     ]
   },
   plugins: [
