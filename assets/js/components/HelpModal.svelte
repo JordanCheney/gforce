@@ -8,7 +8,7 @@
   }
 </script>
 
-<div class="flex flex-col justify-center eading-relaxed text-lg">
+<div class="flex flex-col justify-center leading-relaxed text-lg">
   <div class="flex-grow-0 justify-center p-2">
     <p class="float-left font-bold text-xl">GForCE Help</p>
     <div class="float-right cursor-pointer items-center h-8 w-8 p-2" on:click={handleCloseButtonClick}>
