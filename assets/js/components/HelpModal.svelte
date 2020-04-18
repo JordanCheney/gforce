@@ -27,8 +27,7 @@
       <p id="Overview" class="font-bold text-xl">Overview</p>
 
       GForCE is a web-based tool that exposes Google Cloud's media APIs in a user friendly UI. 
-      It was built based on my experience with the Interpol DevOps Working Groups and was 
-      designed with law enforcement users in the VictimID field in mind.
+      It was built based on my experience with the Interpol DevOps Working Groups.
 
       <p id="DataUsage" class="font-bold text-xl pt-6">Data Usage</p>
 
