@@ -120,8 +120,8 @@
 </script>
 
 <div class="flex flex-row flex-wrap h-12">
-  <label class="flex-none py-2 pr-4">
-    <p class="self-center font-bold">Filters:</p>
+  <label class="flex-none py-2 pr-4 self-center font-bold">
+    Filters:
   </label>
   {#each Object.values(filters) as filter}
     <label class="flex flex-row flex-none pr-4 py-2">
