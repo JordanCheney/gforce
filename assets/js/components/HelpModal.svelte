@@ -38,6 +38,7 @@
       When you add an image to the web app, it is uploaded first to the GForCE server with a unique id. On the server, it is kept in RAM and
       transformed into a compliant Google request, then dispatched to the Google Cloud server for processing. The GForCE server waits for a
       response from Google, associates that response with the images unique id, and then returns that response to client for association.
+      Images are never stored, even temporarily, on any persistent media on any GForCE server.
       For users looking to validate this, the GForCE server is 
       <a class="text-blue-400" target="_blank" href="https://github.com/JordanCheney/gforce">open soure</a> and can be hosted locally so that users
       have full control. Google has outlined their data policies specifically for the Cloud Vision API 
