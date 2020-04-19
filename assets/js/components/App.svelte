@@ -25,7 +25,7 @@
       return;
     }
 
-    launchApiRequest(e.detail.id, e.detail.file, apiKey, ["Recognize"], handleApiResponseReady);
+    launchApiRequest(e.detail.id, e.detail.file, header.getApiKey(), ["Recognize"], handleApiResponseReady);
     
     if (gallery) {
       gallery.handleAddImage(e);
